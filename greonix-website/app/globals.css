@@ -1,0 +1,7 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+/* tailwind font family token, for tailwind^v4 use it like that */
+@theme {
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}

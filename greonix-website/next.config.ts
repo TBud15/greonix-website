@@ -3,7 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
 
-  // redirects
   async redirects() {
     return [
       // from / to /ukr permanent redirect
