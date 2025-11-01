@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SectionFive() {
   return (
-    <div className="flex items-center justify-center mt-7 mb-100">
+    <div className="flex items-center justify-center mt-7 mb-20">
       {/* Icon left side ...Commented out, can be uncommented to switch icon side... */}
       {/* <div className="mr-25">
         <Image

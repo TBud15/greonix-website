@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SectionThree() {
   return (
-    <div className="flex items-center justify-center mt-15 mb-7">
+    <div className="flex items-center justify-center mt-15 mb-7 bg-[#F5F7FA] p-10">
       {/* Left most text */}
       <div className="font-inter">
         <p className="font-bold text-3xl w-105">

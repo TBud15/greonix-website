@@ -1,6 +1,7 @@
 //Navbar component
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -21,9 +22,17 @@ export default function Navbar() {
         {/* Menu options */}
         <div className="flex gap-10 items-center font-inter">
           <div className="flex gap-10">
-            <p>Главная</p>
-            <p>Наша Продукция</p>
-            <p>Контакт</p>
+            <Link href="/ru">
+              <p>Главная</p>
+            </Link>
+
+            <Link href="/ru/nasha-produktsiya/rezinovaya-kroshka">
+              <p>Наша Продукция</p>
+            </Link>
+
+            <Link href="/ru/kontakt">
+              <p>Контакт</p>
+            </Link>
           </div>
 
           {/* Submit order button */}
