@@ -2,6 +2,8 @@
 // any client components should be imported here to save SEO optimization of this page
 
 import Image from "next/image";
+import ProductInfoTabs from "./component/ProductInfoTable";
+import FractionSwitcher from "./component/FractionSwitcher";
 
 export default function Page() {
   return (
@@ -13,15 +15,9 @@ export default function Page() {
 
       {/* Start of page product div */}
       <div className="flex gap-15 mt-5">
-        {/* Left side photo */}
-        <div>
-          <Image
-            src="/CrumbRubberPage/Product.png"
-            width={550}
-            height={550}
-            alt="Product"
-          />
-        </div>
+        {/* Left side photo and fraction*/}
+
+        <FractionSwitcher />
 
         <div>
           {/* Produt info right side */}
@@ -68,47 +64,6 @@ export default function Page() {
               </p>
             </div>
 
-            {/* Divider line */}
-            <hr className="my-6 w-145 border-t border-gray-400/70" />
-
-            {/* Fraction section */}
-            <div className="flex items-center gap-7">
-              <div>
-                <p className="text-xl">Фракция</p>
-                <p className="text-gray-400 mt-2">0.55мм</p>
-              </div>
-
-              {/* Fraction photos */}
-              {/* Fraction */}
-              <div className="p-4 border border-[#4CAF4F] rounded-xl border-1">
-                <Image
-                  src="/CrumbRubberPage/ex-1.png"
-                  width={60}
-                  height={60}
-                  alt="Orange"
-                />
-              </div>
-
-              {/* Fraction 2 */}
-              <div className="p-4">
-                <Image
-                  src="/CrumbRubberPage/ex-2.png"
-                  width={60}
-                  height={60}
-                  alt="Orange"
-                />
-              </div>
-
-              <div className="p-4">
-                <Image
-                  src="/CrumbRubberPage/ex-3.png"
-                  width={60}
-                  height={60}
-                  alt="Orange"
-                />
-              </div>
-            </div>
-
             <hr className="my-6 w-145 border-t border-gray-400/70" />
           </div>
           {/* Make order button */}
@@ -116,6 +71,9 @@ export default function Page() {
             <button className="text-white bg-[#4CAF4F] text-center w-full p-3 rounded-3xl">
               Оформить Заказ
             </button>
+          </div>
+          <div className="mt-6">
+            <ProductInfoTabs />
           </div>
         </div>
       </div>
