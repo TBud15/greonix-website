@@ -11,9 +11,9 @@ type Fraction = {
 };
 
 const FRACTIONS: Fraction[] = [
-  { id: "f-0-55", label: "0.55мм", src: "/CrumbRubberPage/ex-1.png" },
-  { id: "f-1-3", label: "1–3мм", src: "/CrumbRubberPage/ex-2.png" },
-  { id: "f-3-5", label: "3–5мм", src: "/CrumbRubberPage/ex-3.png" },
+  { id: "f-0-55", label: "0.55мм - 1мм", src: "/product/0.5-1mm.png" },
+  { id: "f-1-3", label: "1–3мм", src: "/product/1-3mm.png" },
+  { id: "f-3-5", label: "2–4мм", src: "/product/2-4mm.png" },
 ];
 
 export default function FractionSwitcher() {

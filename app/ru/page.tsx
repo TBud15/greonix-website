@@ -7,7 +7,6 @@ import SectionTwo from "./components/LandingPage/SectionTwo";
 import SectionThree from "./components/LandingPage/SectionThree";
 import SectionFour from "./components/LandingPage/SectionFour";
 import SectionFive from "./components/LandingPage/SectionFive";
-import Footer from "./components/Footer";
 
 export default function Page() {
   return (
@@ -17,7 +16,6 @@ export default function Page() {
       <SectionThree />
       <SectionFour />
       <SectionFive />
-      <Footer />
     </div>
   );
 }

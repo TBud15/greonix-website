@@ -12,59 +12,68 @@ export default function DetailsAccordion() {
         <ul className="divide-y divide-slate-100">
           <Item
             id="how"
-            title="HOW TO USE"
+            title="ПРИМЕНЕНИЕ"
             open={openId === "how"}
             onClick={() => toggle("how")}
           >
             <p className="text-sm leading-relaxed text-slate-600">
-              Using vitamin C supplements effectively involves understanding the
-              appropriate dosage, the form that best suits your needs, and the
-              timing of intake. Here are some guidelines.
+              Резиновая крошка используется для создания безопасных покрытий на
+              спортивных площадках, детских игровых зонах, беговых дорожках и
+              тротуарах. Материал укладывается на подготовленное основание с
+              использованием специального полиуретанового связующего.
+              Обеспечивает отличную амортизацию и долговечность покрытия.
             </p>
           </Item>
 
           <Item
             id="quality"
-            title="QUALITY"
+            title="КАЧЕСТВО"
             open={openId === "quality"}
             onClick={() => toggle("quality")}
           >
             <p className="text-sm leading-relaxed text-slate-600">
-              Third-party tested, non-GMO, GMP-certified facility, with batch
-              traceability.
+              Производство на автоматизированных линиях нового поколения, полное
+              соответствие европейским стандартам, сертифицированный продукт с
+              контролем качества каждой партии.
             </p>
           </Item>
 
           <Item
             id="features"
-            title="KEY FEATURES"
+            title="КЛЮЧЕВЫЕ ХАРАКТЕРИСТИКИ"
             open={openId === "features"}
             onClick={() => toggle("features")}
           >
             <ul className="space-y-2 text-sm leading-relaxed text-slate-600">
               <li className="flex items-start gap-2">
                 <span className="text-[#4CAF4F] mt-0.5">●</span>
-                <span>Buffered form for gentle absorption</span>
+                <span>Высокая износостойкость и ударопрочность</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#4CAF4F] mt-0.5">●</span>
-                <span>Vegan capsules</span>
+                <span>Экологически чистый материал</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#4CAF4F] mt-0.5">●</span>
-                <span>No artificial colors or flavors</span>
+                <span>Устойчивость к температурным перепадам</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#4CAF4F] mt-0.5">●</span>
+                <span>Отличная амортизация и безопасность</span>
               </li>
             </ul>
           </Item>
 
           <Item
             id="ingredients"
-            title="INGREDIENTS"
+            title="СОСТАВ И ФРАКЦИИ"
             open={openId === "ingredients"}
             onClick={() => toggle("ingredients")}
           >
             <p className="text-sm leading-relaxed text-slate-600">
-              Ascorbic acid; capsule: hypromellose (plant-based); rice flour.
+              100% переработанная резина из изношенных шин. Доступные фракции:
+              0.5-2мм, 1-3мм, 2-4мм, 3-5мм. Материал очищен от металлических и
+              текстильных включений, однородный по размеру и составу.
             </p>
           </Item>
         </ul>
