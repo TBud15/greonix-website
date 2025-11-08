@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /en/order-success
+Disallow: /ukr/order-success
+Disallow: /ru/order-success
+
+# Sitemap
+Sitemap: https://greonix.com.ua/sitemap.xml

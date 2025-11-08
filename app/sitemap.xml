@@ -1,0 +1,71 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+  <!-- UKR -->
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ukr</loc>
+    <lastmod>2025-11-08T04:01:42+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ukr/nasha-produktsiya/gumova-krikhta</loc>
+    <lastmod>2025-11-08T04:01:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ukr/kontakty</loc>
+    <lastmod>2025-11-08T04:01:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ukr/oformyty-zamovlennya</loc>
+    <lastmod>2025-11-08T04:01:42+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- RU -->
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ru</loc>
+    <lastmod>2025-11-08T04:01:00+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ru/nasha-produktsiya/rezinovaya-kroshka</loc>
+    <lastmod>2025-11-08T04:01:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ru/kontakt</loc>
+    <lastmod>2025-11-08T04:01:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/ru/oformit-zakaz</loc>
+    <lastmod>2025-11-08T04:01:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- EN -->
+  <url>
+    <loc>https://greonix-website-one.vercel.app/en</loc>
+    <lastmod>2025-11-08T04:01:25+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/en/our-products/crumb-rubber</loc>
+    <lastmod>2025-11-08T04:01:25+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/en/contact</loc>
+    <lastmod>2025-11-08T04:01:25+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://greonix-website-one.vercel.app/en/place-an-order</loc>
+    <lastmod>2025-11-08T04:01:25+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
