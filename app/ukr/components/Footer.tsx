@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Upper part */}
         <div className="text-center lg:text-left">
           <p className="text-2xl sm:text-3xl lg:text-4xl w-full lg:w-90 text-[#4CAF4F]">
-            Качественная резиновая крошка для вашего бизнеса и проектов
+            Якісна гумова крихта для вашого бізнесу та проектів
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function Footer() {
               className="flex-shrink-0"
             />
             <p className="text-base lg:text-lg w-full lg:w-60">
-              Черных Запорожцев, 16, Днепр, Днепропетровская область, 49000
+              Чорних Запорожців, 16, Дніпро, Дніпропетровська Область, 49000
             </p>
           </div>
 

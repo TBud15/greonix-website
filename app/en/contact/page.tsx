@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col items-center font-inter py-16 px-6 pt-40">
-      <h1 className="text-4xl font-bold text-center mb-12">Связаться с нами</h1>
+      <h1 className="text-4xl font-bold text-center mb-12">Contact Us</h1>
 
       <div className="flex flex-col lg:flex-row gap-12 max-w-6xl w-full">
         {/* Left side - Contact Info */}
@@ -47,7 +47,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <p className="font-bold text-lg mb-1">Телефон</p>
+              <p className="font-bold text-lg mb-1">Phone</p>
               <p className="text-gray-600">+380 67 631 2222</p>
             </div>
           </div>
@@ -83,9 +83,10 @@ export default function Contact() {
               />
             </div>
             <div>
-              <p className="font-bold text-lg mb-1">Адрес</p>
+              <p className="font-bold text-lg mb-1">Address</p>
               <p className="text-gray-600">
-                Черных Запорожцев, 16, Днепр, Днепропетровская область, 49000
+                Chornykh Zaporozhtsiv, 16, Dnipro, Dnipropetrovsk Oblast, 49000,
+                Ukraine
               </p>
             </div>
           </div>
@@ -94,14 +95,14 @@ export default function Contact() {
         {/* Right side - Contact Form */}
         <div className="lg:w-2/3 bg-white p-8 rounded-2xl shadow-lg">
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* First and Last Name */}
+            {/* First and Company */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label
                   htmlFor="firstName"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Имя
+                  First Name
                 </label>
                 <input
                   type="text"
@@ -120,7 +121,7 @@ export default function Contact() {
                   htmlFor="company"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Компания
+                  Last Name
                 </label>
                 <input
                   type="text"
@@ -161,7 +162,7 @@ export default function Contact() {
                   htmlFor="phone"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Телефон
+                  Phone
                 </label>
                 <input
                   type="tel"
@@ -170,7 +171,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
-                  placeholder="+380 67 123 4567"
+                  placeholder="+1 234 567 8900"
                   required
                 />
               </div>
@@ -182,7 +183,7 @@ export default function Contact() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700 mb-2"
               >
-                Сообщение
+                Message
               </label>
               <textarea
                 id="message"
@@ -191,7 +192,7 @@ export default function Contact() {
                 onChange={handleChange}
                 rows={6}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all resize-none"
-                placeholder="Напишите ваше сообщение..."
+                placeholder="Write your message..."
                 required
               />
             </div>
@@ -201,7 +202,7 @@ export default function Contact() {
               type="submit"
               className="w-full bg-[#4CAF4F] hover:bg-[#45a049] text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
             >
-              Отправить Сообщение
+              Send Message
             </button>
           </form>
         </div>

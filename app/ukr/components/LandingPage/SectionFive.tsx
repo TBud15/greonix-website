@@ -51,10 +51,10 @@ export default function SectionFive() {
       </div> */}
 
       <div className="flex flex-col gap-4 font-inter text-center lg:text-left">
-        <p className="text-md text-gray-500 text-lg">Оставайтесь на связи</p>
+        <p className="text-md text-gray-500 text-lg">Залишайтеся на зв'язку</p>
         <p className="text-2xl sm:text-3xl lg:text-3xl w-full lg:w-150">
-          Подпишитесь, чтобы получать свежие новости и полезные материалы о
-          продукции Greonix.
+          Підпішіться, щоб отримувати свіжі новини та корисні матеріали про
+          продукцію Greonix.
         </p>
 
         {/* Input box */}
@@ -77,12 +77,12 @@ export default function SectionFive() {
             className="bg-[#388E3B] p-4 text-white rounded-2xl sm:rounded-l-none sm:rounded-r-2xl text-center cursor-pointer hover:bg-[#2d7a31] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === "sending"
-              ? "Отправка..."
+              ? "Відправка..."
               : status === "success"
-              ? "Успешно!"
+              ? "Успішно!"
               : status === "error"
-              ? "Ошибка"
-              : "Подписаться"}
+              ? "Помилка"
+              : "Підписатися"}
           </button>
         </form>
       </div>

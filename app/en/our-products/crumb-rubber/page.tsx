@@ -14,15 +14,14 @@ export default function Page() {
     <div className="font-inter pt-38">
       <div className="ml-0 lg:ml-80 px-6 lg:px-0">
         <p className="text-gray-400">
-          Наша продукция /{" "}
-          <span className="text-green-400">Резиновая Крошка</span>
+          Our Products / <span className="text-green-400">Crumb Rubber</span>
         </p>
 
         {/* Start of page product div */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-15 mt-5">
           {/* Mobile title - only visible on mobile */}
           <div className="lg:hidden">
-            <h1 className="text-3xl">Резиновая Крошка Greonix</h1>
+            <h1 className="text-3xl">Greonix Crumb Rubber</h1>
 
             {/* Crumb rubber size */}
             <div className="flex items-center mt-2 ml-0.5">
@@ -34,7 +33,7 @@ export default function Page() {
                 className="mt-2"
                 unoptimized
               />
-              <p className="text-xl mt-1.5 ml-5">От 0.5мм</p>
+              <p className="text-xl mt-1.5 ml-5">From 0.5mm</p>
             </div>
           </div>
 
@@ -46,9 +45,7 @@ export default function Page() {
             {/* Produt info right side */}
             <div>
               {/* Desktop title - only visible on desktop */}
-              <h1 className="hidden lg:block text-4xl">
-                Резиновая Крошка Greonix
-              </h1>
+              <h1 className="hidden lg:block text-4xl">Greonix Crumb Rubber</h1>
 
               {/* Crumb rubber size - desktop only */}
               <div className="hidden lg:flex items-center mt-2 ml-0.5">
@@ -62,7 +59,7 @@ export default function Page() {
                 />
 
                 {/* Size variable */}
-                <p className="text-xl mt-1.5 ml-5">От 0.55мм</p>
+                <p className="text-xl mt-1.5 ml-5">From 0.55mm</p>
               </div>
 
               <hr className="my-6 w-full lg:w-145 border-t border-gray-400/70" />
@@ -71,28 +68,27 @@ export default function Page() {
               {/* First paragraph */}
               <div className="w-full lg:w-145">
                 <p>
-                  Резиновая крошка Greonix — это высококачественный продукт,
-                  полученный путем переработки изношенных шин на современном
-                  автоматизированном оборудовании. Она обладает высокой
-                  износостойкостью, упругостью и долговечностью, что делает её
-                  идеальным решением для спортивных, детских и промышленных
-                  покрытий.
+                  Greonix crumb rubber is a high-quality material obtained by
+                  processing worn tires on modern automated equipment. It has
+                  excellent performance characteristics: high wear resistance,
+                  impact resistance, and durability, making it an ideal choice
+                  for various types of surfaces.
                 </p>
 
                 {/* Second paragraph */}
                 <p className="mt-5">
-                  Наша резиновая крошка используется при строительстве
-                  спортивных площадок, детских зон, беговых дорожек и безопасных
-                  покрытий. Она обеспечивает отличную амортизацию, снижает риск
-                  травм и подходит для использования на открытом воздухе и в
-                  помещениях.
+                  Our products are widely used in the construction of sports
+                  facilities, children's play areas, running tracks, and for
+                  creating safe rubber surfaces. Crumb rubber provides excellent
+                  cushioning, reduces the risk of injury, and is suitable for
+                  use both outdoors and indoors.
                 </p>
 
                 <p className="mt-5">
-                  Экологически чистая продукция Greonix соответствует
-                  европейским стандартам качества и производится в Украине. Это
-                  надёжный выбор для долговечных, безопасных и эстетичных
-                  резиновых покрытий.
+                  Greonix's environmentally friendly products meet European
+                  quality standards and are manufactured in Ukraine. They are a
+                  reliable choice for durable, safe, and aesthetically pleasing
+                  flooring.
                 </p>
               </div>
 
@@ -100,9 +96,9 @@ export default function Page() {
             </div>
             {/* Make order button */}
             <div>
-              <Link href="/ru/oformit-zakaz">
+              <Link href="/en/place-an-order">
                 <button className="text-white bg-[#4CAF4F] text-center w-full p-3 rounded-3xl cursor-pointer">
-                  Оформить Заказ
+                  Place an Order
                 </button>
               </Link>
             </div>

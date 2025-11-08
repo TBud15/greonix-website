@@ -5,10 +5,10 @@ export default function SectionTwo() {
     <div className="flex flex-col items-center font-inter mt-5 px-6 lg:px-0">
       <div className="flex flex-col items-center">
         <h1 className="font-bold text-2xl sm:text-3xl w-full max-w-2xl lg:w-120 text-center mb-3">
-          Резиновая крошка для любых задач и масштабов
+          Rubber Crumb for Any Task and Scale
         </h1>
         <p className="text-gray-600 text-center">
-          Высококачественная резиновая крошка Greonix подходит для различных типов покрытий: спортивных объектов, строительных проектов и частного использования
+          High-quality Greonix rubber crumb is suitable for various types of surfaces: sports facilities, construction projects, and private use
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 mt-10 w-full max-w-6xl">
@@ -22,10 +22,10 @@ export default function SectionTwo() {
             unoptimized
           />
           <p className="font-bold mb-2 text-xl lg:text-2xl">
-            Строительным компаниям
+            Construction Companies
           </p>
           <p>
-            Для создания ударопрочных, износостойких и долговечных покрытий.
+            For creating impact-resistant, wear-resistant, and durable surfaces.
           </p>
         </div>
 
@@ -39,11 +39,10 @@ export default function SectionTwo() {
             unoptimized
           />
           <p className="font-bold mb-2 text-xl lg:text-2xl">
-            Спортивным объектам
+            Sports Facilities
           </p>
           <p>
-            Идеальный материал для стадионов, кортов и беговых дорожек.
-            Обеспечивает амортизацию и безопасность спортсменов.
+            Perfect material for stadiums, courts, and running tracks. Provides cushioning and safety for athletes.
           </p>
         </div>
 
@@ -56,8 +55,8 @@ export default function SectionTwo() {
             className="mb-4 mt-3"
             unoptimized
           />
-          <p className="font-bold mb-2 text-xl lg:text-2xl">Частным лицам</p>
-          <p>для детских площадок, дач и декоративных решений.</p>
+          <p className="font-bold mb-2 text-xl lg:text-2xl">Private Use</p>
+          <p>For playgrounds, cottages, and decorative solutions.</p>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ export default function Navbar() {
               isScrolled ? "w-8 h-8" : "w-10 h-10"
             }`}
           />
-          <Link href="/ru">
+          <Link href="/ukr">
             <p
               className={`font-inter font-bold transition-all duration-300 ${
                 isScrolled ? "text-2xl" : "text-3xl"
@@ -88,18 +88,18 @@ export default function Navbar() {
               isScrolled ? "gap-6" : "gap-10"
             }`}
           >
-            <Link href="/ru">
-              <p className="hover:text-[#4CAF4F] transition-colors">Главная</p>
+            <Link href="/ukr">
+              <p className="hover:text-[#4CAF4F] transition-colors">Головна</p>
             </Link>
 
-            <Link href="/ru/nasha-produktsiya/rezinovaya-kroshka">
+            <Link href="/ukr/nasha-produktsiya/gumova-krikhta">
               <p className="hover:text-[#4CAF4F] transition-colors">
-                Резиновая Крошка
+                Гумова Крихта
               </p>
             </Link>
 
-            <Link href="/ru/kontakt">
-              <p className="hover:text-[#4CAF4F] transition-colors">Контакты</p>
+            <Link href="/ukr/kontakty">
+              <p className="hover:text-[#4CAF4F] transition-colors">Контакти</p>
             </Link>
 
             {/* Language Dropdown */}
@@ -108,7 +108,7 @@ export default function Navbar() {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="hover:text-[#4CAF4F] transition-colors flex items-center gap-1"
               >
-                RU
+                UA
                 <svg
                   className={`w-4 h-4 transition-transform ${
                     isLangOpen ? "rotate-180" : ""
@@ -155,7 +155,7 @@ export default function Navbar() {
           </div>
 
           {/* Submit order button */}
-          <Link href="/ru/oformit-zakaz">
+          <Link href="/ukr/oformyty-zamovlennya">
             <div
               className={`flex gap-2 bg-[#4CAF4F] text-white rounded-xl items-centered transition-all duration-300 ${
                 isScrolled
@@ -163,7 +163,8 @@ export default function Navbar() {
                   : "p-3 pt-4 pb-4 pl-6 pr-6"
               }`}
             >
-              <p>Оформить Заказ</p>
+              <p>Оформити Замовлення</p>
+
               <Image
                 src="/Navbar/right-arrow.svg"
                 width={20}
@@ -183,24 +184,24 @@ export default function Navbar() {
           }`}
         >
           <div className="flex flex-col gap-6 p-8 mt-20 font-inter">
-            <Link href="/ru" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/ukr" onClick={() => setIsMenuOpen(false)}>
               <p className="text-lg hover:text-[#4CAF4F] transition-colors">
-                Главная
+                Головна
               </p>
             </Link>
 
             <Link
-              href="/ru/nasha-produktsiya/rezinovaya-kroshka"
+              href="/ukr/nasha-produktsiya/gumova-krikhta"
               onClick={() => setIsMenuOpen(false)}
             >
               <p className="text-lg hover:text-[#4CAF4F] transition-colors">
-                Резиновая Крошка
+                Гумова Крихта
               </p>
             </Link>
 
-            <Link href="/ru/kontakt" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/ukr/kontakty" onClick={() => setIsMenuOpen(false)}>
               <p className="text-lg hover:text-[#4CAF4F] transition-colors">
-                Контакты
+                Контакти
               </p>
             </Link>
 
@@ -210,7 +211,7 @@ export default function Navbar() {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="text-lg hover:text-[#4CAF4F] transition-colors flex items-center gap-1"
               >
-                RU
+                UA
                 <svg
                   className={`w-4 h-4 transition-transform ${
                     isLangOpen ? "rotate-180" : ""
@@ -264,9 +265,12 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/ru/oformit-zakaz" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              href="/ukr/oformyty-zamovlennya"
+              onClick={() => setIsMenuOpen(false)}
+            >
               <div className="flex gap-2 bg-[#4CAF4F] hover:bg-[#45a049] text-white p-3 rounded-xl items-center justify-center mt-4 transition-colors cursor-pointer">
-                <p>Оформить Заказ</p>
+                <p>Оформити Замовлення</p>
                 <Image
                   src="/Navbar/right-arrow.svg"
                   width={20}

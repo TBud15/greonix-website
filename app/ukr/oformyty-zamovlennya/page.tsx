@@ -36,13 +36,13 @@ export default function OrderPage() {
       (result) => {
         console.log(`${result.text}, order sent. Thank you.`);
         // Redirect to success page
-        router.push("/ru/order-success");
+        router.push("/ukr/order-success");
       },
       (error) => {
         console.log(`${error.text}, error occurred.`);
         setIsSubmitting(false);
         alert(
-          "Произошла ошибка при отправке заказа. Пожалуйста, попробуйте еще раз или свяжитесь с нами по телефону."
+          "Сталася помилка при відправці замовлення. Будь ласка, спробуйте ще раз або зв'яжіться з нами по телефону."
         );
       }
     );
@@ -59,7 +59,7 @@ export default function OrderPage() {
 
   const copyAddress = () => {
     navigator.clipboard.writeText(
-      "Черных Запорожцев, 16, Днепр, Днепропетровская область, 49000"
+      "Чорних Запорожців, 16, Дніпро, Дніпропетровська Область, 49000"
     );
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -69,9 +69,9 @@ export default function OrderPage() {
     <div className="font-inter pt-40 pb-16 px-6 lg:px-0">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold mb-3 uppercase tracking-tight">
-          Оформление заказа
+          Оформлення замовлення
         </h1>
-        <p className="text-gray-500 text-lg mb-12">Резиновая крошка Greonix</p>
+        <p className="text-gray-500 text-lg mb-12">Гумова крихта Greonix</p>
 
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left side - Form */}
@@ -83,7 +83,7 @@ export default function OrderPage() {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Имя
+                  Ім'я
                 </label>
                 <input
                   type="text"
@@ -92,7 +92,7 @@ export default function OrderPage() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
-                  placeholder="Ваше имя"
+                  placeholder="Ваше ім'я"
                   required
                   disabled={isSubmitting}
                 />
@@ -105,7 +105,7 @@ export default function OrderPage() {
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Email{" "}
-                  <span className="text-gray-400 text-xs">(необязательно)</span>
+                  <span className="text-gray-400 text-xs">(необов'язково)</span>
                 </label>
                 <input
                   type="email"
@@ -126,7 +126,7 @@ export default function OrderPage() {
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Телефон{" "}
-                  <span className="text-gray-400 text-xs">(необязательно)</span>
+                  <span className="text-gray-400 text-xs">(необов'язково)</span>
                 </label>
                 <input
                   type="tel"
@@ -146,8 +146,8 @@ export default function OrderPage() {
                   htmlFor="company"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Компания{" "}
-                  <span className="text-gray-400 text-xs">(необязательно)</span>
+                  Компанія{" "}
+                  <span className="text-gray-400 text-xs">(необов'язково)</span>
                 </label>
                 <input
                   type="text"
@@ -156,7 +156,7 @@ export default function OrderPage() {
                   value={formData.company}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
-                  placeholder="Название компании"
+                  placeholder="Назва компанії"
                   disabled={isSubmitting}
                 />
               </div>
@@ -167,8 +167,8 @@ export default function OrderPage() {
                   htmlFor="volume"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Интересующий объём{" "}
-                  <span className="text-gray-400 text-xs">(необязательно)</span>
+                  Цікавий обсяг{" "}
+                  <span className="text-gray-400 text-xs">(необов'язково)</span>
                 </label>
                 <input
                   type="text"
@@ -177,7 +177,7 @@ export default function OrderPage() {
                   value={formData.volume}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
-                  placeholder="Например: 10 тонн"
+                  placeholder="Наприклад: 10 тонн"
                   disabled={isSubmitting}
                 />
               </div>
@@ -188,7 +188,7 @@ export default function OrderPage() {
                   htmlFor="comments"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Дополнительные комментарии
+                  Додаткові коментарі
                 </label>
                 <textarea
                   id="comments"
@@ -197,7 +197,7 @@ export default function OrderPage() {
                   onChange={handleChange}
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Напишите дополнительную информацию..."
+                  placeholder="Напишіть додаткову інформацію..."
                   disabled={isSubmitting}
                 />
               </div>
@@ -208,7 +208,7 @@ export default function OrderPage() {
                 disabled={isSubmitting}
                 className="w-full bg-[#4CAF4F] hover:bg-[#45a049] text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Отправка..." : "Отправить Заказ"}
+                {isSubmitting ? "Відправка..." : "Відправити Замовлення"}
               </button>
             </form>
           </div>
@@ -217,24 +217,24 @@ export default function OrderPage() {
           <div className="lg:w-1/3 space-y-8">
             {/* Office Address */}
             <div>
-              <h3 className="font-bold text-xl mb-4">Офис</h3>
+              <h3 className="font-bold text-xl mb-4">Офіс</h3>
               <p
                 onClick={copyAddress}
                 className="text-gray-600 cursor-pointer hover:text-[#4CAF4F] transition-colors relative"
               >
-                Адрес офиса: Черных Запорожцев, 16, Днепр, Днепропетровская
-                область, 49000
+                Адреса офісу: Чорних Запорожців, 16, Дніпро, Дніпропетровська
+                Область, 49000
               </p>
               {copied && (
                 <span className="text-[#4CAF4F] text-sm mt-1 block">
-                  ✓ Адрес скопирован!
+                  ✓ Адресу скопійовано!
                 </span>
               )}
             </div>
 
             {/* Quick Inquiries */}
             <div>
-              <h3 className="font-bold text-xl mb-4">Для быстрых запросов</h3>
+              <h3 className="font-bold text-xl mb-4">Для швидких запитів</h3>
               <div className="space-y-2">
                 <p className="text-gray-600">
                   <span className="font-medium">Телефон:</span>{" "}
@@ -258,7 +258,7 @@ export default function OrderPage() {
             </div>
 
             {/* Product Box */}
-            <Link href="/ru/nasha-produktsiya/rezinovaya-kroshka">
+            <Link href="/ukr/nasha-produktsiya/gumova-krikhta">
               <div className="bg-white border-2 border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-[#4CAF4F] transition-all cursor-pointer">
                 <div className="flex justify-center mb-4">
                   <Image
@@ -270,7 +270,7 @@ export default function OrderPage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-center">
-                  Резиновая крошка Greonix
+                  Гумова крихта Greonix
                 </h3>
                 <p className="text-gray-600 text-center mt-2">0.55-5mm</p>
               </div>
