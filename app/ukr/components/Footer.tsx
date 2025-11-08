@@ -33,11 +33,16 @@ export default function Footer() {
               src="/Footer/phone-icon.svg"
               width={25}
               height={25}
-              alt="Location"
+              alt="Phone"
               unoptimized
               className="flex-shrink-0"
             />
-            <p className="text-base lg:text-lg">+380 67 631 2222</p>
+            <a
+              href="tel:+380676312222"
+              className="text-base lg:text-lg hover:text-[#4CAF4F] transition-colors"
+            >
+              +380 67 631 2222
+            </a>
           </div>
 
           {/* Email */}
@@ -46,11 +51,16 @@ export default function Footer() {
               src="/Footer/email-icon.svg"
               width={25}
               height={25}
-              alt="Location"
+              alt="Email"
               unoptimized
               className="flex-shrink-0"
             />
-            <p className="text-base lg:text-lg">info@greonix.com.ua</p>
+            <a
+              href="mailto:info@greonix.com.ua"
+              className="text-base lg:text-lg hover:text-[#4CAF4F] transition-colors"
+            >
+              info@greonix.com.ua
+            </a>
           </div>
         </div>
       </div>

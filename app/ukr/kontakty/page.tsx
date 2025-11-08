@@ -82,7 +82,12 @@ export default function Contact() {
             </div>
             <div>
               <p className="font-bold text-lg mb-1">Телефон</p>
-              <p className="text-gray-600">+380 67 631 2222</p>
+              <a
+                href="tel:+380676312222"
+                className="text-gray-600 hover:text-[#4CAF4F] transition-colors"
+              >
+                +380 67 631 2222
+              </a>
             </div>
           </div>
 
@@ -100,7 +105,12 @@ export default function Contact() {
             </div>
             <div>
               <p className="font-bold text-lg mb-1">Email</p>
-              <p className="text-gray-600">info@greonix.com.ua</p>
+              <a
+                href="mailto:info@greonix.com.ua"
+                className="text-gray-600 hover:text-[#4CAF4F] transition-colors"
+              >
+                info@greonix.com.ua
+              </a>
             </div>
           </div>
 

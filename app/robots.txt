@@ -5,4 +5,4 @@ Disallow: /ukr/order-success
 Disallow: /ru/order-success
 
 # Sitemap
-Sitemap: https://greonix-website-one.vercel.app/sitemap.xml
+Sitemap: https://greonix.com.ua/sitemap.xml
