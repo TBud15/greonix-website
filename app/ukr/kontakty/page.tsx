@@ -193,7 +193,8 @@ export default function Contact() {
                   htmlFor="company"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Компанія
+                  Компанія{" "}
+                  <span className="text-gray-400 text-xs">(необов'язково)</span>
                 </label>
                 <input
                   type="text"
@@ -203,7 +204,6 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
                   placeholder=""
-                  required
                   disabled={status === "sending"}
                 />
               </div>
@@ -236,7 +236,8 @@ export default function Contact() {
                   htmlFor="phone"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Телефон
+                  Телефон{" "}
+                  <span className="text-gray-400 text-xs">(необов'язково)</span>
                 </label>
                 <input
                   type="tel"
@@ -246,7 +247,6 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
                   placeholder="+380 67 123 4567"
-                  required
                   disabled={status === "sending"}
                 />
               </div>

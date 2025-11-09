@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,11 +12,42 @@ export default function Contact() {
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
+    setStatus("sending");
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID_CONTACT!,
+        {
+          firstName: formData.firstName,
+          company: formData.company,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_KEY_EMAILJS!
+      );
+
+      setStatus("success");
+      setFormData({
+        firstName: "",
+        company: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+      setTimeout(() => setStatus("idle"), 3000);
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
   };
 
   const handleChange = (
@@ -150,6 +182,7 @@ export default function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
                   placeholder=""
                   required
+                  disabled={status === "sending"}
                 />
               </div>
 
@@ -158,7 +191,8 @@ export default function Contact() {
                   htmlFor="company"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Компания
+                  Компания{" "}
+                  <span className="text-gray-400 text-xs">(необязательно)</span>
                 </label>
                 <input
                   type="text"
@@ -168,7 +202,7 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
                   placeholder=""
-                  required
+                  disabled={status === "sending"}
                 />
               </div>
             </div>
@@ -191,6 +225,7 @@ export default function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
                   placeholder="your@example.com"
                   required
+                  disabled={status === "sending"}
                 />
               </div>
 
@@ -199,7 +234,8 @@ export default function Contact() {
                   htmlFor="phone"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Телефон
+                  Телефон{" "}
+                  <span className="text-gray-400 text-xs">(необязательно)</span>
                 </label>
                 <input
                   type="tel"
@@ -209,7 +245,7 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all"
                   placeholder="+380 67 123 4567"
-                  required
+                  disabled={status === "sending"}
                 />
               </div>
             </div>
@@ -231,15 +267,23 @@ export default function Contact() {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#4CAF4F] focus:border-transparent outline-none transition-all resize-none"
                 placeholder="Напишите ваше сообщение..."
                 required
+                disabled={status === "sending"}
               />
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-[#4CAF4F] hover:bg-[#45a049] text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
+              disabled={status === "sending"}
+              className="w-full bg-[#4CAF4F] hover:bg-[#45a049] text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Отправить Сообщение
+              {status === "sending"
+                ? "Отправка..."
+                : status === "success"
+                ? "Успешно отправлено!"
+                : status === "error"
+                ? "Ошибка отправки"
+                : "Отправить Сообщение"}
             </button>
           </form>
         </div>
