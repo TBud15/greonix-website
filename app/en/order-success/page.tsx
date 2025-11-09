@@ -24,7 +24,7 @@ export default function OrderSuccess() {
   }, [countdown, router]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center px-6 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex items-center justify-center px-6 py-16 mt-22">
       <div className="max-w-2xl w-full text-center">
         {/* Success Icon */}
         <div className="mb-8 flex justify-center">
@@ -84,8 +84,32 @@ export default function OrderSuccess() {
                 href="mailto:info@greonix.com.ua"
                 className="text-lg text-[#4CAF4F] hover:underline"
               >
-                sales@greonix.com.ua
+                info@greonix.com.ua
               </a>
+            </div>
+            <div className="flex items-center justify-center gap-3 pt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <div className="text-left">
+                <p className="text-sm font-medium text-gray-700">
+                  Working Hours:
+                </p>
+                <p className="text-sm text-gray-600">
+                  Mon-Fri: 8:00 AM - 6:00 PM | Sat-Sun: Closed
+                </p>
+              </div>
             </div>
           </div>
         </div>
