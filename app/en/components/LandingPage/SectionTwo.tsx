@@ -5,10 +5,11 @@ export default function SectionTwo() {
     <div className="flex flex-col items-center font-inter mt-5 px-6 lg:px-0">
       <div className="flex flex-col items-center">
         <h1 className="font-bold text-2xl sm:text-3xl w-full max-w-2xl lg:w-120 text-center mb-3">
-          Rubber Crumb for Any Task and Scale
+          Crumb Rubber for Any Task and Scale
         </h1>
         <p className="text-gray-600 text-center">
-          High-quality Greonix rubber crumb is suitable for various types of surfaces: sports facilities, construction projects, and private use
+          High-quality Greonix crumb rubber is suitable for various types of
+          surfaces: sports facilities, construction projects, and private use
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 mt-10 w-full max-w-6xl">
@@ -42,7 +43,8 @@ export default function SectionTwo() {
             Sports Facilities
           </p>
           <p>
-            Perfect material for stadiums, courts, and running tracks. Provides cushioning and safety for athletes.
+            Perfect material for stadiums, courts, and running tracks. Provides
+            cushioning and safety for athletes.
           </p>
         </div>
 

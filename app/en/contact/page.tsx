@@ -49,10 +49,10 @@ export default function Contact() {
             <div>
               <p className="font-bold text-lg mb-1">Phone</p>
               <a
-                href="tel:+380676312222"
+                href="tel:+380686868700"
                 className="text-gray-600 hover:text-[#4CAF4F] transition-colors"
               >
-                +380 67 631 2222
+                +38 068 68 68 700
               </a>
             </div>
           </div>
@@ -97,6 +97,34 @@ export default function Contact() {
               <p className="text-gray-600">
                 Chornykh Zaporozhtsiv, 16, Dnipro, Dnipropetrovsk Oblast, 49000,
                 Ukraine
+              </p>
+            </div>
+          </div>
+
+          {/* Working Hours */}
+          <div className="flex gap-4 items-start bg-[#F5F7FA] p-6 rounded-xl hover:shadow-md transition-shadow">
+            <div className="flex-shrink-0 bg-[#4CAF4F] p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <p className="font-bold text-lg mb-1">Working Hours</p>
+              <p className="text-gray-600">
+                Monday - Friday: 8:00 AM - 6:00 PM
+                <br />
+                Saturday - Sunday: Closed
               </p>
             </div>
           </div>

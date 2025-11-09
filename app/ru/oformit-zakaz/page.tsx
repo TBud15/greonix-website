@@ -222,8 +222,7 @@ export default function OrderPage() {
                 onClick={copyAddress}
                 className="text-gray-600 cursor-pointer hover:text-[#4CAF4F] transition-colors relative"
               >
-                Адрес офиса: Черных Запорожцев, 16, Днепр, Днепропетровская
-                область, 49000
+                Черных Запорожцев, 16, Днепр, Днепропетровская область, 49000
               </p>
               {copied && (
                 <span className="text-[#4CAF4F] text-sm mt-1 block">
@@ -239,10 +238,10 @@ export default function OrderPage() {
                 <p className="text-gray-600">
                   <span className="font-medium">Телефон:</span>{" "}
                   <a
-                    href="tel:+380676312222"
+                    href="tel:+380686868700"
                     className="hover:text-[#4CAF4F] transition-colors underline"
                   >
-                    +380 67 631 2222
+                    +38 068 68 68 700
                   </a>
                 </p>
                 <p className="text-gray-600">
@@ -251,8 +250,15 @@ export default function OrderPage() {
                     href="mailto:info@greonix.com.ua"
                     className="hover:text-[#4CAF4F] transition-colors underline"
                   >
-                    info@greonix.com.ua
+                    sales@greonix.com.ua
                   </a>
+                </p>
+                <p className="text-gray-600 mt-4">
+                  <span className="font-medium">Рабочие часы:</span>
+                  <br />
+                  Понедельник - Пятница: 8:00 - 18:00
+                  <br />
+                  Суббота - Воскресенье: выходной
                 </p>
               </div>
             </div>

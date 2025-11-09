@@ -38,10 +38,10 @@ export default function Footer() {
               className="flex-shrink-0"
             />
             <a
-              href="tel:+380676312222"
+              href="tel:+380686868700"
               className="text-base lg:text-lg hover:text-[#4CAF4F] transition-colors"
             >
-              +380 67 631 2222
+              +38 068 68 68 700
             </a>
           </div>
 

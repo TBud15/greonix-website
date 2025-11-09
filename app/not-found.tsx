@@ -281,7 +281,7 @@ export default function NotFound() {
           <div style={contactRow}>
             {/* Phone */}
             <a
-              href="tel:+380676312222"
+              href="tel:+380686868700"
               style={linkBase}
               onMouseEnter={() => setPhoneHover(true)}
               onMouseLeave={() => setPhoneHover(false)}
@@ -301,7 +301,7 @@ export default function NotFound() {
                   d="M3 5a2 2 0 012-2h1.28a2 2 0 011.94 1.515l.5 2A2 2 0 018.8 8.2l-.9.9a16 16 0 006 6l.9-.9a2 2 0 011.685-.08l2 .5A2 2 0 0121 15.72V17a2 2 0 01-2 2h-1A16 16 0 013 7V6a2 2 0 012-2z"
                 />
               </svg>
-              +380 67 631 2222
+              +38 068 68 68 700
             </a>
 
             {/* Email */}
