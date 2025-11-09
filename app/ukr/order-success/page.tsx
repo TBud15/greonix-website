@@ -68,10 +68,10 @@ export default function OrderSuccess() {
                 unoptimized
               />
               <a
-                href="tel:+380676312222"
+                href="tel:+380686868700"
                 className="text-lg text-[#4CAF4F] hover:underline"
               >
-                +380 67 631 2222
+                +38 068 68 68 700
               </a>
             </div>
             <div className="flex items-center justify-center gap-3">
@@ -86,7 +86,7 @@ export default function OrderSuccess() {
                 href="mailto:info@greonix.com.ua"
                 className="text-lg text-[#4CAF4F] hover:underline"
               >
-                info@greonix.com.ua
+                sales@greonix.com.ua
               </a>
             </div>
           </div>
