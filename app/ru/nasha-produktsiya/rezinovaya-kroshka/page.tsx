@@ -67,6 +67,26 @@ export default function Page() {
 
               <hr className="my-6 w-full lg:w-145 border-t border-gray-400/70" />
 
+              <div className="w-full lg:w-145 mb-6">
+                <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-300/50 bg-black">
+                  <video
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full aspect-video object-cover"
+                    preload="metadata"
+                  >
+                    <source
+                      src="/video/tire-recycling-video.mp4"
+                      type="video/mp4"
+                    />
+                    Ваш браузер не поддерживает тег видео.
+                  </video>
+                </div>
+              </div>
+
               {/* Product description paragraph */}
               {/* First paragraph */}
               <div className="w-full lg:w-145">
