@@ -74,7 +74,7 @@ export default function Footer() {
         </div> */}
 
         {/* Copyright */}
-        <p className="text-gray-500">© Greonix 2025. All Rights Reserved.</p>
+        <p className="text-gray-500">© Greonix 2026. All Rights Reserved.</p>
       </div>
     </div>
   );
