@@ -31,7 +31,7 @@ export default function Contact() {
           phone: formData.phone,
           message: formData.message,
         },
-        process.env.NEXT_PUBLIC_KEY_EMAILJS!
+        process.env.NEXT_PUBLIC_KEY_EMAILJS!,
       );
 
       setStatus("success");
@@ -51,7 +51,7 @@ export default function Contact() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -106,10 +106,10 @@ export default function Contact() {
             <div>
               <p className="font-bold text-lg mb-1">Email</p>
               <a
-                href="mailto:info@greonix.com.ua"
+                href="mailto:info@tirerecycling.com.ua"
                 className="text-gray-600 hover:text-[#4CAF4F] transition-colors"
               >
-                info@greonix.com.ua
+                info@tirerecycling.com.ua
               </a>
             </div>
           </div>
@@ -282,10 +282,10 @@ export default function Contact() {
               {status === "sending"
                 ? "Відправка..."
                 : status === "success"
-                ? "Успішно відправлено!"
-                : status === "error"
-                ? "Помилка відправки"
-                : "Відправити Повідомлення"}
+                  ? "Успішно відправлено!"
+                  : status === "error"
+                    ? "Помилка відправки"
+                    : "Відправити Повідомлення"}
             </button>
           </form>
         </div>
